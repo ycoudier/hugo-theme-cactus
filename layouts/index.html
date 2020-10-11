@@ -7,23 +7,23 @@
       <p>Find me on
       {{ $length := (len .Site.Params.social) }}
       {{ range $index, $elem := .Site.Params.social}}
-      {{ if eq $elem.name "email" }}
-	<br>
-	<a class="icon" target="_blank" rel="noopener" href="mailto:{{ $elem.link }}">
-          <i class="fas fa-envelope"></i>
-        </a>
+        {{ if eq $elem.name "email" }}
+	  email me on 
+	  <a class="icon" target="_blank" rel="noopener" href="mailto:{{ $elem.link }}">
+            <i class="fas fa-envelope"></i>
+          </a>
         {{ else if eq $elem.name "rss" }}
-        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
-          <i class="fas fa-rss"></i>
-        </a>
+          <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
+            <i class="fas fa-rss"></i>
+          </a>
         {{ else if eq $elem.name "scholar" }}
-        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
+          <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
         {{ else }}
-        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
-          <i class="fab fa-{{ lower $elem.name }}"></i>
-        </a>
+          <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
+            <i class="fab fa-{{ lower $elem.name }}"></i>
+          </a>
         {{ end }}
         {{ if (lt (add $index 2) $length) }}
           {{- print " , " -}}
