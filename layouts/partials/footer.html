@@ -1,4 +1,4 @@
-  <section id="about">
+<section id="about">
   {{ if isset .Site.Params "social" }}
       <p>Find me on
       {{ $length := (len .Site.Params.social) }}
@@ -31,8 +31,7 @@
       {{ end }}
       </p>
   {{ end }}
-  </section>
-  \hr
+</section>
 <footer id="footer">
   <div class="footer-left">
     Copyright  &copy; {{ now.Format "2006" }} {{ if .Site.Copyright }} {{ print .Site.Copyright }} {{ else }} {{ print .Site.Title }} {{ end }}
