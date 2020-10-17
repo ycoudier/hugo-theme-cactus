@@ -1,7 +1,7 @@
-name = "Cactus adapted for myself"
+name = "Cactus theme adapted for myself"
 license = "MIT"
 licenselink = "https://github.com/ycoudier/hugo-theme-cactus/blob/master/LICENSE"
-description = "A clean, responsive hugo theme for personal blog. Forked from hexo theme cactus created by @probberechts, and then forked from https://github.com/monkeyWzr/hugo-theme-cactus."
+description = "Forked from hexo theme cactus created by @probberechts to https://github.com/monkeyWzr/hugo-theme-cactus (appears in the list of hugo themse), and then to https://github.com/ycoudier/hugo-theme-cactus for my own usage"
 homepage = "https://github.com/ycoudier/hugo-theme-cactus"
 tags = ["academic", "responsive", "clean"]
 features = ["mathjax", "customizable", "color"]
